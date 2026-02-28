@@ -6,7 +6,7 @@ ARCH=$(uname -m)
 
 echo "Installing package dependencies..."
 echo "---------------------------------------------------------------"
-pacman -Syu --noconfirm ristretto
+pacman -Syu --noconfirm ristretto doxygen
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
