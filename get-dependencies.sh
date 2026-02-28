@@ -15,9 +15,13 @@ get-debloated-pkgs --add-common --prefer-nano ! llvm
 # Comment this out if you need an AUR package
 make-aur-package gdk-pixbuf2-noglycin
 make-aur-package libjxl-noglycin
-make-aur-package libheif-noglycin
-make-aur-package libavif-noglycin
 make-aur-package librsvg-noglycin
+
+# archlinux arm does not have svt-av1
+if [ "$ARCH" = 'x86_64' ]; then
+	make-aur-package libheif-noglycin
+	make-aur-package libavif-noglycin
+fi
 
 # If the application needs to be manually built that has to be done down here
 
