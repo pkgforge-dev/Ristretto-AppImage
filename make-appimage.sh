@@ -11,9 +11,10 @@ export UPINFO="gh-releases-zsync|${GITHUB_REPOSITORY%/*}|${GITHUB_REPOSITORY#*/}
 export ICON=/usr/share/icons/hicolor/128x128/apps/org.xfce.ristretto.png
 export DESKTOP=/usr/share/applications/org.xfce.ristretto.desktop
 export ALWAYS_SOFTWARE=1
+export APPNAME=Ristretto
 
 # Deploy dependencies
-quick-sharun /usr/bin/ristretto
+quick-sharun /usr/bin/ristretto /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/*
 
 # Additional changes can be done in between here
 
