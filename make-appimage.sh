@@ -14,7 +14,7 @@ export ALWAYS_SOFTWARE=1
 export APPNAME=Ristretto
 
 # Deploy dependencies
-quick-sharun /usr/bin/ristretto /usr/lib/gdk-pixbuf-2.0/2.10.0/loaders/*
+quick-sharun /usr/bin/ristretto /usr/lib/gdk-pixbuf-*/*/loaders/*
 
 # Additional changes can be done in between here
 
