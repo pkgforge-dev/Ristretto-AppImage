@@ -10,7 +10,7 @@ pacman -Syu --noconfirm ristretto doxygen
 
 echo "Installing debloated packages..."
 echo "---------------------------------------------------------------"
-get-debloated-pkgs --add-common --prefer-nano glycin-mini x265-mini ! llvm ! gdk-pixbuf ! librsvg
+get-debloated-pkgs --add-common --prefer-nano
 
 # Comment this out if you need an AUR package
 # make-aur-package 
